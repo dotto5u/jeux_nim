@@ -80,7 +80,7 @@ int Lire_Entier(int bi, int bs)
     {   
         printf("\e[0;35m\n---> \e[0m");
         int x = scanf("%d", &n);
-        printf("%d\n", n);
+        while(getchar()!='\n');
         if (n < bi || bs < n || x != 1) printf("\e[0;31\nmerreur !\n\e[0m");
         else return n;
     }
